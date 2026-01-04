@@ -27,7 +27,7 @@ int main() {
 
         // Initialize OpenArm with CAN interface and enable CAN-FD
         std::cout << "Initializing OpenArm CAN..." << std::endl;
-        openarm::can::socket::OpenArm openarm("can0", true);  // Use CAN-FD on can0 interface
+        openarm::can::socket::OpenArm openarm("can1", false);  // Use CAN-FD on can0 interface
 
         // Initialize arm motors
         std::vector<openarm::damiao_motor::MotorType> motor_types = {

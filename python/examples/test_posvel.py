@@ -16,7 +16,7 @@ import openarm_can as oa
 import time
 # Create OpenArm instance
 
-arm = oa.OpenArm("can0", True)
+arm = oa.OpenArm("can0", False)
 
 # Initialize arm motors
 motor_types = [oa.MotorType.DM4310]
